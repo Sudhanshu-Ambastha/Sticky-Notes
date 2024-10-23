@@ -18,8 +18,12 @@ function addNotes(){
     let div = document.createElement("div");
     let p = document.createElement("p");
     let cross_btn = document.createElement("button");
-    
 
+    if(notesContainer.children.length >= 30){
+        alert("You can't create more then 10 notes");
+        return;
+    }
+    
     div.appendChild(p);
     div.appendChild(cross_btn);
     
